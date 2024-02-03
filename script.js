@@ -1,4 +1,5 @@
 const ctx = document.getElementById('myChart');
+const paragr = document.querySelector('.para');
 
 new Chart(ctx, {
   type: 'bar',
@@ -20,14 +21,29 @@ new Chart(ctx, {
 });
 
 
-const chartAnimation = anime({
-    targets: myChart.data.datasets[0].data,
+
+
+anime({
+    targets: paragr,
+    innerHTML: [0, 34],
     easing: 'linear',
-    delay: anime.stagger(200),
-    duration: 1000,
-    loop: true,
-    direction: 'alternate',
-    update: function (anim) {
-        myChart.update();
-    },
-});
+    round: 10 // Will round the animated value to 1 decimal
+  });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
