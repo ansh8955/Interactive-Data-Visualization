@@ -12,9 +12,17 @@ body{
 .para{
     margin-left: 2rem;
     font-size: 2rem;
+    height: 0;
 }
 
 .value{
+    height: 0;
+
     margin-left: 2rem;
     font-size: 1rem;
+}
+
+chart-container{
+    max-width: 600px;
+    margin: 0 auto;
 }
